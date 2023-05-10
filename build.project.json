@@ -1,0 +1,11 @@
+{
+	"name": "FusionPlasma",
+	"tree": {
+	  "$path": "Packages",
+	  
+	  "FusionPlasma": {
+		"$path": "src"
+	  }
+	  
+	}
+  }
