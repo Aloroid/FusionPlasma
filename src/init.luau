@@ -31,7 +31,7 @@ function FusionPlasma.wrap<T...>(component: (props: {[any]: any}) -> Instance, t
 		local callback: (() -> unknown)?, updateCallback = Plasma.useState()
 
 		for _, key in options do
-			if valueProps[key] and props[key] == nil then
+			if valueProps[key] ~= nil and props[key] == nil then
 				valueProps[key]:set(nil)
 			else
 				valueProps[key] = Value(nil)
