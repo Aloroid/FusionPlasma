@@ -33,7 +33,7 @@ function FusionPlasma.wrap<T...>(component: (props: {[any]: any}) -> Instance, t
 		for _, key in options do
 			if valueProps[key] ~= nil and props[key] == nil then
 				valueProps[key]:set(nil)
-			else
+			elseif props[key] == nil then
 				valueProps[key] = Value(nil)
 			end
 		end
